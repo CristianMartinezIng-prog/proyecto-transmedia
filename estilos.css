@@ -1,0 +1,437 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1ec;
+    color: #202020;
+}
+
+
+/* NAVEGACIÓN */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #263746;
+    border-bottom: 2px solid #8fa6b5;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    opacity: 0.6;
+}
+
+
+/* PORTADA */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+
+        url("imagenes/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: rgb(128, 80, 80);
+}
+
+.hero-content {
+    max-width: 900px;
+    margin-left: 10%;
+    padding-top: 60px;
+}
+
+.subtitulo {
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 0.95;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 15px 25px;
+
+    border: none;
+
+    background: #1b1813;
+    color: white;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+}
+
+
+/* SECCIONES */
+
+.seccion {
+    padding: 120px 20px;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.etiqueta {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: clamp(40px, 6vw, 70px);
+    margin-bottom: 30px;
+}
+
+.texto {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+/* TARJETAS */
+
+.tarjetas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 60px;
+}
+
+.tarjeta {
+    background: rgb(209, 176, 176);
+    padding: 35px;
+    min-height: 250px;
+}
+
+.tarjeta span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tarjeta h3 {
+    font-size: 28px;
+    margin: 30px 0 15px;
+}
+
+.tarjeta p {
+    line-height: 1.6;
+}
+
+
+/* HISTORIAS */
+
+.historias {
+    background: #dedbd4;
+}
+
+.historia-box {
+    margin-top: 50px;
+
+    padding: 60px;
+
+    background: #252525;
+
+    color: white;
+}
+
+.historia-box h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.historia-box p {
+    max-width: 700px;
+    line-height: 1.7;
+}
+
+
+/* CONTENIDO TRANSMEDIA */
+
+.media-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 60px;
+}
+
+.media-card {
+    background: white;
+
+    padding: 30px;
+
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.icono {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.media-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.media-card p {
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.media-card button {
+    border: none;
+
+    background: #202020;
+    color: white;
+
+    padding: 12px;
+
+    cursor: pointer;
+}
+
+
+/* AYUDA */
+
+.ayuda {
+    padding: 120px 20px;
+
+    background: #252525;
+
+    color: white;
+}
+
+.ayuda p {
+    max-width: 700px;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.boton-claro {
+    background: white;
+    color: #202020;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #111;
+
+    color: white;
+
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 10px;
+}
+
+    .video-contenedor {
+        width: 90%;
+        max-width: 800px;
+        margin: 40px auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .video-contenedor iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+    }
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .menu {
+        display: none;
+    }
+
+    .hero-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.imagen-personaje {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* FORO ANÓNIMO */
+
+.foro {
+    background: #264252;
+}
+
+.foro-caja {
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.foro-caja h3 {
+    margin-bottom: 20px;
+    color: #263746;
+}
+
+#mensajeForo {
+    width: 100%;
+    min-height: 140px;
+    padding: 15px;
+    border: 1px solid #cbd5dc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    resize: vertical;
+}
+
+#mensajeForo:focus {
+    outline: 2px solid #8fa6b5;
+}
+
+.aviso-foro {
+    margin-top: 10px;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.foro-caja .boton {
+    background: #263746;
+    border-radius: 6px;
+}
+
+.lista-comentarios {
+    margin-top: 40px;
+}
+
+.comentario {
+    padding: 18px;
+    margin-top: 15px;
+    background: #2b1f0c;
+    border-left: 4px solid #8fa6b5;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.comentario strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #263746;
+}
+
+@media (max-width: 600px) {
+    .foro-caja {
+        padding: 20px;
+    }
+}
