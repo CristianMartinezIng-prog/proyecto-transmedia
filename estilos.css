@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f1ec;
+    background: #b8c7c5;
     color: #202020;
 }
 
@@ -24,8 +24,8 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: #263746;
-    border-bottom: 2px solid #8fa6b5;
+    background: #00D0B6;
+    border-bottom: 2px solid #1E293B;
 }
 
 .navbar {
@@ -40,7 +40,7 @@ header {
 }
 
 .logo {
-    color: white;
+    color: #1E293B;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -52,7 +52,7 @@ header {
 }
 
 .menu a {
-    color: white;
+    color: #1E293B;
     text-decoration: none;
     font-size: 14px;
 }
@@ -177,7 +177,7 @@ h2 {
 }
 
 .tarjeta {
-    background: rgb(209, 176, 176);
+    background: rgb(233, 208, 208);
     padding: 35px;
     min-height: 250px;
 }
@@ -208,7 +208,7 @@ h2 {
 
     padding: 60px;
 
-    background: #252525;
+    background: #1E293B;
 
     color: white;
 }
@@ -280,7 +280,7 @@ h2 {
 .ayuda {
     padding: 120px 20px;
 
-    background: #252525;
+    background: #f3784c;
 
     color: white;
 }
@@ -417,7 +417,7 @@ footer p {
 .comentario {
     padding: 18px;
     margin-top: 15px;
-    background: #2b1f0c;
+    background: #665941;
     border-left: 4px solid #8fa6b5;
     border-radius: 6px;
     overflow-wrap: anywhere;
@@ -427,11 +427,29 @@ footer p {
 .comentario strong {
     display: block;
     margin-bottom: 8px;
-    color: #263746;
+    color: #fdfeff;
 }
 
 @media (max-width: 600px) {
     .foro-caja {
         padding: 20px;
     }
+}
+
+
+.juego {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.juego h2 {
+    margin-bottom: 20px;
+}
+
+.juego iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
 }
